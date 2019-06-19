@@ -10,5 +10,6 @@ build: ## Build the container
 publish: build
 	docker push ${DOCKER_REGISTRY}/${APP_NAME}:${VERSION}
 
+
 pull_latest:
 	docker pull ${DOCKER_REGISTRY}/${APP_NAME}:latest
